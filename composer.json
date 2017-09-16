@@ -1,0 +1,41 @@
+{
+    "name": "kapi/skeleton",
+    "description": "Kapi Skeleton App",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Sasia",
+            "email": "a.sasia.ldy@gmail.com",
+            "homepage": "https://github.com/AdrienSldy",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "a.sasia.ldy@gmail.com",
+        "issues": "https://github.com/kapiphp/skeleton/issues",
+        "forum": "https://stackoverflow.com/tags/kapi+skeleton",
+        "wiki": "https://github.com/kapiphp/skeleton/wiki",
+        "source": "https://github.com/kapiphp/skeleton"
+    },
+    "require": {
+        "php": "~7.1",
+        "kapi/kapi": "dev-master"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "~3.1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spec\\": "spec"
+        }
+    },
+    "scripts": {
+        "spec": "kahlan --reporter=verbose"
+    }
+}
